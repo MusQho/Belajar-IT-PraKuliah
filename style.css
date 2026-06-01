@@ -1,0 +1,52 @@
+body {
+    /* ganti font */
+    /* ganti background */
+    /* ganti warna font */
+    /* mengakifkan komponen flexbox */
+    /* mengarahkan flexbox secara vertikal(column) */
+    /* menghimpit konten ketengah verikal(bila column) dan ketengah horizontal (bila row) */
+    /* menghimpit konten kanan-kiri (bila column) dan atas-bawah (bila row) */
+    /* tinggi halaman (100vh = menyesuaikan semua device panjang halaman) */
+    /* mengatur jarak kosong dari luar border */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* menghias element h1 */
+/* warna font biru */
+/* jarak margin bagian bawah 10px */
+h1 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+/* menghias button */
+/* warna background */
+/* warna teks putih */
+/* bingkai di nonaktifkan */
+/* jarak antara konten dengan border 12 px( 14 px*/
+/* ukuran font 16px */
+/* radius dari border (agar sedikit bulat) 6px */
+/* bila cursor diarahkan ke button akan berubah menjadi kursor pointer */
+/* efek transisi apabila tombol disorot kursor akan berubah background warnanya */
+button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 12px 14px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1557b0;
+}
