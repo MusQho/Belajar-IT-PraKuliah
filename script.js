@@ -6,7 +6,7 @@ const tombol = document.getElementById ("tombolKontak");
 const nameDeveloper = "MUH. DHUHA QOLBY TAQIYYA";
 // let berfungsi membuat variable dan menjadikan isi variable bisa diganti dan dapat di recall didalam scoop atau diluar scoop
 let clickCount = 0;
-let isReadyForUS = True;
+let isReadyForUS = true;
 
 
 // memanggil variable tombol lalu menggunakan fungsi dengan titik (addEventListener("click") = apabila di klik)
