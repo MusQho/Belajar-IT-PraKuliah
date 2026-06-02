@@ -122,3 +122,10 @@ menyesesuaikan ukuran gambar dalam kontainer */
 #tombolKontak:hover {
     background-color: var(--primary-hover);
 }
+
+.counter-style {
+    font-size: 24px;
+    color: var(--text-main);
+    font-weight: 700;
+    margin-bottom: 16px;
+}

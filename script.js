@@ -7,6 +7,7 @@ const nameDeveloper = "MUH. DHUHA QOLBY TAQIYYA";
 // let berfungsi membuat variable dan menjadikan isi variable bisa diganti dan dapat di recall didalam scoop atau diluar scoop
 let clickCount = 0;
 let isReadyForUS = true;
+const elementText = document.getElementById ("counterTeks");
 
 
 // memanggil variable tombol lalu menggunakan fungsi dengan titik (addEventListener("click") = apabila di klik)
@@ -15,8 +16,8 @@ tombol.addEventListener("click", function(){
     clickCount++
     // Pengkondisian (jika clickCount kurang dari 3)
     if (clickCount < 3) {
-        // munculkan peringatan 
-        alert("Keep Clicking ! Now: " + clickCount)
+        // innerText berfungsi mengakses atau mengubah teks mentah yang ada pada elemen html tetapi tidak bisa menyertakan elemen HTML pada javascript 
+        elementText.innerText = clickCount;
     }
     else {
         // jika kondisi diatas bernilai false maka ini akan dieksekusi
@@ -26,10 +27,9 @@ tombol.addEventListener("click", function(){
 
 
 /* --- Mengenal Operator Perbandingan Standar IT ---
-Saat menulis kondisi di dalam tanda kurung if, Anda bisa menggunakan berbagai simbol matematika perbandingan berikut:
-< (Kurang dari): if (umur < 17)
-> (Lebih dari): if (nilai > 75)
-<= (Kurang dari atau sama dengan): if (skor <= 100)
->= (Lebih dari atau sama dengan): if (skor >= 50)
-=== (Sama dengan secara mutlak): if (status === "admin") -> Catatan: Di JavaScript modern, selalu gunakan tiga tanda sama dengan (===) untuk mengecek kesamaan secara akurat, jangan gunakan dua (==) karena memiliki celah keamanan data.
-!== (Tidak sama dengan): if (pilihan !== "batal")*/ 
+1. .innerHTML jauh lebih kuat karena bisa menyuntikkan teks sekaligus bersama tag HTML baru 
+Contoh: elementText.innerHTML = "<strong>" + clickCount + "</strong>";
+2. Memanipulasi Gaya Desain Secara Langsung (.style) JavaScript juga bisa mengubah hiasan CSS suatu elemen secara dinamis di tengah jalan ketika sebuah aksi terjadi.
+Contoh: elementText.style.color = "red";
+3. Mengubah Atribut Elemen (.setAttribute) Digunakan untuk mengubah nilai atribut di dalam tag HTML, seperti mengubah link tujuan pada tag <a> atau mengubah sumber gambar pada tag <img>
+Contoh: tombol.setAttribute("disabled", "true");*/ 
