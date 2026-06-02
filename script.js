@@ -13,8 +13,12 @@ let isReadyForUS = true;
 tombol.addEventListener("click", function(){
     // menambahkan increment(++) yang bermakna menambahkan 1 pada variable clickCount
     clickCount++
-    // console.log adalah jendela rahasia yang bisa dilihat melalui inspect di web
-    console.log(clickCount);
+    if (clickCount < 3) {
+        alert("Keep Clicking ! Now: " + clickCount)
+    }
+    else {
+        window.location.href = "https://github.com/MusQho"
+    };
 });
 
 
