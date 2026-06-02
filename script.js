@@ -1,26 +1,27 @@
-// mengambil element html ById
+// take element ById 
 const tombol = document.getElementById ("tombolKontak");
 
 
-// const berfungsi membuat variable dan menjadikan isi variablenya tidak bisa diganti ganti
+// function const is create a variable and you cannot change the value later
 const nameDeveloper = "MUH. DHUHA QOLBY TAQIYYA";
-// let berfungsi membuat variable dan menjadikan isi variable bisa diganti dan dapat di recall didalam scoop atau diluar scoop
+// function let is create a variable and you can change the value later
 let clickCount = 0;
 let isReadyForUS = true;
 const elementText = document.getElementById ("counterTeks");
 
 
-// memanggil variable tombol lalu menggunakan fungsi dengan titik (addEventListener("click") = apabila di klik)
+// call variable tombol then use function with point (addEventListener("click") = if a click)
 tombol.addEventListener("click", function(){
-    // menambahkan increment(++) yang bermakna menambahkan 1 pada variable clickCount
+    // add increment(++) its mean add 1 on the variable clickCount
     clickCount++
-    // Pengkondisian (jika clickCount kurang dari 3)
+    // conditioning (if clickCount less than three)
     if (clickCount < 3) {
-        // innerText berfungsi mengakses atau mengubah teks mentah yang ada pada elemen html tetapi tidak bisa menyertakan elemen HTML pada javascript 
+        // innerText use to access or change raw text in the HTML element but can't include HTML element in Javasript 
         elementText.innerText = clickCount;
     }
     else {
         // jika kondisi diatas bernilai false maka ini akan dieksekusi
+        // if the above condition is false so this will be execution
         window.location.href = "https://github.com/MusQho"
     };
 });
