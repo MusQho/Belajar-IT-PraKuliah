@@ -1,3 +1,20 @@
+/* --- mendeklarasikan variable dalam css dengan :root --- 
+variable untuk background-color body
+variable untuk background-color card
+variable untuk warna text utama
+variable untuk warna text lainnya
+variable untuk warna utama 
+variable unutk warna utama ketika disorot kursor*/
+:root {
+ --bg-page: #f0f2f5 ;
+ --bg-card: #ffffff ;
+ --text-main: #111111;
+ --text-sub: #555555;
+ --primary: #0066cc;
+ --primary-hover: #0052a3;
+}
+
+/* --- menghias semua elemnt yang ada di body --- */
 /* ganti font */
 /* ganti background */
 /* ganti warna font */
@@ -9,8 +26,8 @@
 /* mengatur jarak kosong dari luar border */
 body {
     font-family: "Inter", sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
+    background-color: var(--bg-page);
+    color: var(--text-main);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,14 +49,14 @@ menyesesuaikan ukuran gambar dalam kontainer */
 }
 
 /* --- menghias kartu nama --- */
-/* mengganiti background putih */
+/* mengganiti background */
 /* mengtur jarak antara konten dengan border 12px */
 /* mengatur lengkungan border 12px */
 /* mengatur maksimal lebar */
 /* memberikan bayang bayang 4px(memberi bayangan dibawah konten) 15px(memberikan efek bayang halus rgba(0,0,0,0.1) */
 /* menengahkan konten pada main axis */
 .profile-card {
-    background-color: #ffffff;
+    background-color: var(--bg-card);
     padding: 30px;
     border-radius: 12px;
     max-width: 400px;
@@ -52,7 +69,7 @@ menyesesuaikan ukuran gambar dalam kontainer */
 /* jarak margin bagian bawah 10px */
 .name {
     font-size: 28px;
-    color: #111111;
+    color: var(--text-main);
     margin-bottom: 8px;
 }
 
@@ -62,7 +79,7 @@ menyesesuaikan ukuran gambar dalam kontainer */
 /* jarak margin bagian bawah 16px */
 .role {
     font-size: 16px;
-    color: #0066cc;
+    color: var(--primary);
     font-weight: 600;
     margin-bottom: 16px;
 }
@@ -74,7 +91,7 @@ menyesesuaikan ukuran gambar dalam kontainer */
 /* jarak margin bagian bawah 24px */
 .bio {
     font-size: 15px;
-    color: #555555;
+    color: var(--text-sub);
     line-height: 1.5;
     margin-bottom: 24px;
 }
@@ -90,7 +107,7 @@ menyesesuaikan ukuran gambar dalam kontainer */
 /* efek transisi (ease) apabila tombol disorot kursor akan berubah background warnanya */
 /* lebar tombol 100% */
 #tombolKontak {
-    background-color: #0066cc;
+    background-color: var(--primary);
     color: #ffffff;
     font-weight: 600;
     border: none;
@@ -103,5 +120,5 @@ menyesesuaikan ukuran gambar dalam kontainer */
 
 /* fungsi agar saat tombol disorot kursor berubah warna (hover)*/
 #tombolKontak:hover {
-    background-color: #0052a3;
+    background-color: var(--primary-hover);
 }
