@@ -13,22 +13,23 @@ let isReadyForUS = true;
 tombol.addEventListener("click", function(){
     // menambahkan increment(++) yang bermakna menambahkan 1 pada variable clickCount
     clickCount++
+    // Pengkondisian (jika clickCount kurang dari 3)
     if (clickCount < 3) {
+        // munculkan peringatan 
         alert("Keep Clicking ! Now: " + clickCount)
     }
     else {
+        // jika kondisi diatas bernilai false maka ini akan dieksekusi
         window.location.href = "https://github.com/MusQho"
     };
 });
 
 
-/* --- macam macam operator aritmatika penambahan variabel dinamis ---
-1. Increment (++) bermakna menambahkan point 1 pada variable
-2. Decrement (--) bermakna mengurangi point 1 pada variable 
-3. Penambahan/Pengurangan Custom (+=/-=) bermakana menambahkan/mengurangi point yang diinginkan pada variable
-4. Operator Aritmatika 
-+ (Penjumlahan): let total = 5 + 3;
-- (Pengurangan): let sisa = 10 - 4;
-* (Perkalian - menggunakan simbol bintang): let hasil = 4 * 2;
-/ (Pembagian - menggunakan garis miring): let bagi = 20 / 5;
-% (Modulus / Sisa Hasil Bagi): let sisaBagi = 10 % 3; (Hasilnya 1, karena 10 dibagi 3 adalah 3, sisa 1).*/ 
+/* --- Mengenal Operator Perbandingan Standar IT ---
+Saat menulis kondisi di dalam tanda kurung if, Anda bisa menggunakan berbagai simbol matematika perbandingan berikut:
+< (Kurang dari): if (umur < 17)
+> (Lebih dari): if (nilai > 75)
+<= (Kurang dari atau sama dengan): if (skor <= 100)
+>= (Lebih dari atau sama dengan): if (skor >= 50)
+=== (Sama dengan secara mutlak): if (status === "admin") -> Catatan: Di JavaScript modern, selalu gunakan tiga tanda sama dengan (===) untuk mengecek kesamaan secara akurat, jangan gunakan dua (==) karena memiliki celah keamanan data.
+!== (Tidak sama dengan): if (pilihan !== "batal")*/ 
