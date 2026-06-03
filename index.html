@@ -4,37 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- mengambil font global dari google start -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <!-- mengambil font global dari google end -->
-
-    <!-- menghubungkan html dengan css pada file yang terpisah start-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- menghubungkan html dengan css pada file yang terpisah end-->
-
-    <title>Portofolio - MusQho</title>
+    <title>Freelance Calculator - MusQho</title>
 </head>
 
 <body>
-    <!-- menggunakan semantic HTML <main> didalam body start -->
     <main class="profile-card">
-        <img src="picture.jpeg" alt="MusQho Profile Picture" class="avatar">
+        <img src="picture.jpeg" alt="MusQho Photo" class="avatar">
         <h1 class="name">MUH. DHUHA QOLBY TAQIYYA</h1>
-
-        <p class="role">Future Full-Stack Developer</p>
-        <p class="bio">I'm a Future Programmer with role is Full-Stack Developer in US</p>
-        <div id="counterTeks" class="counter-style">0</div>
-        <button id="tombolKontak">Kunjungi Github Saya - MusQho</button>
+        <p class="role">Interractive Freelace Calculator</p>
+        <p class="bio">Welcome ! Estimate the Development cost for your project by adding hours below. Let's build something amazing
+            together</p>
+        <p class="rate">My Hourly Rate: 20$/hour</p>
+        <div class="counter-style" id="totalCost">$0</div>
+        <button id="countButton">Add 1 Work Hour</button>
     </main>
-    <!-- menggunakan semantic HTML <main> didalam body end -->
-
-    <!-- menghubungkan HTML dengan javascript pada file terpisah start -->
-     <script src="script.js"></script>
-    <!-- menghubungkan HTML dengan javascript pada file terpisah end -->
+    <script src="script.js"></script>
 </body>
 
 </html>

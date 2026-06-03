@@ -1,28 +1,16 @@
-// select elements by Id
-const tombol = document.getElementById ("tombolKontak");
+let workHours = 0;
+const hourlyRate = 20;
 
+const button = document.getElementById("countButton");
+const cost = document.getElementById("totalCost");
 
-// const creates a variable whose value cannot be changed later
-const nameDeveloper = "MUH. DHUHA QOLBY TAQIYYA";
-// let crates a variable whose value can be change later
-let clickCount = 0;
-let isReadyForUS = true;
-const elementText = document.getElementById ("counterTeks");
-
-
-// add a click event listener to the button
-tombol.addEventListener("click", function(){
-    // Increament (++) : increases clickCount by 1
-    clickCount++
-    // conditional check: if clicks are less than 3
-    if (clickCount < 3) {
-        // update the raw text content inside the HTML element
-        elementText.innerText = clickCount;
+button.addEventListener("click", function () {
+    workHours++
+    console.log(workHours)
+    const costTotal = workHours * hourlyRate
+    cost.innerText = "$" + costTotal
+    if (workHours > 4) {
+        //we use querySelctor because we have ( class=".profile-card" ) in HTML not a Id 
+        document.querySelector(".profile-card").style.backgroundColor = "#e6f4ea"
     }
-    else {
-        // if condition above are false, redirect to link Github
-        window.location.href = "https://github.com/MusQho"
-    };
 });
-
-
